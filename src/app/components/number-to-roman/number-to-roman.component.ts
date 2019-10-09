@@ -12,7 +12,7 @@ export class NumberToRomanComponent implements OnInit {
   maxNumber: number = 9999;
   convertType: string = 'roman';
   outputResult: any;
-  // format ==> 9999
+  // format ==> upto 9999
   format = { M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1 };
   constructor() { }
   convert() {
@@ -20,7 +20,6 @@ export class NumberToRomanComponent implements OnInit {
   }
   NumberToRoman(number) {
     let roman = "";
-    // max 9999 Roman characters //
     if(!number){
       return 'Value field cannot be empty';
     }
