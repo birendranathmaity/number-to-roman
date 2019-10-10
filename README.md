@@ -15,7 +15,8 @@ Run `ng build --prod` to build the project.
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-
+## Unit tests report path :- 
+`test-results/unit-test-results.xml` 
 
 ## code coverage report path :---
 

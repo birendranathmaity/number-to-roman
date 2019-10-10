@@ -1,51 +1,50 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'number-to-roman',
-  templateUrl: './number-to-roman.component.html',
-  styleUrls: ['./number-to-roman.component.scss']
+  selector: 'app-number-to-roman',
+  templateUrl: './number-to-roman.component.html'
 })
-export class NumberToRomanComponent implements OnInit {
+export class NumberToRomanComponent {
 
-  //inputs 
+  // inputs
   @Input() value: any;
-  maxNumber: number = 9999;
-  convertType: string = 'roman';
+  maxNumber = 9999;
+  convertType = 'roman';
   outputResult: any;
   // format ==> upto 9999
   format = { M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V: 5, IV: 4, I: 1 };
-  constructor() { }
+  // btn click event
   convert() {
-    this.outputResult = this.NumberToRoman(this.value);
+    this.outputResult = this.numberToRoman(this.value);
   }
-  NumberToRoman(number) {
-    let roman = "";
-    if(!number){
+  // Method for Convert Number to roman
+  numberToRoman = (InputValue) => {
+    let roman = '';
+    if (!InputValue) {
       return 'Value field cannot be empty';
     }
-    if (!/^-?\d+$/.test(number)) {
+    // non integer regx
+    if (!/^-?\d+$/.test(InputValue)) {
 
       return 'Value must be integer';
     }
-
-    if (number < 0) {
-      return "Value must be greater then 0";
+    // positive value
+    if (InputValue < 0) {
+      return 'Value must be greater then 0';
     }
-    if (number > 0 && number > this.maxNumber) {
-      return "Value must be less then 10000";
+    if (InputValue > 0 && InputValue > this.maxNumber) {
+      return 'Value must be less then 10000';
     }
-    for (let key in this.format) {
+    for (const key in this.format) {
 
-      while (number >= this.format[key]) {
+      while (InputValue >= this.format[key]) {
 
-        number -= this.format[key];
+        InputValue -= this.format[key];
         roman += key;
       }
     }
 
     return roman;
   }
-  ngOnInit() {
 
-  }
 }
