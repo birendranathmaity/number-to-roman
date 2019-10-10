@@ -1,21 +1,19 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 77.0.3865 (Windows 10.0.0)" package="" timestamp="2019-10-10T11:05:47" id="0" hostname="LP-5CD8471354" tests="9" errors="0" failures="0" time="0.418">
+<testsuite name="Chrome 77.0.3865 (Windows 10.0.0)" package="" timestamp="2019-10-10T11:15:27" id="0" hostname="LP-5CD8471354" tests="9" errors="0" failures="0" time="0.571">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"/>
   </properties>
-  <testcase name="AppComponent should create the app" time="0.138" classname="Chrome_77_0_3865_(Windows_10_0_0).AppComponent"/>
-  <testcase name="NumberToRomanComponent should be return &quot;Value field cannot be empty&quot; when input field is empty" time="0.046" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
-  <testcase name="NumberToRomanComponent should render title in a h3 tag &quot;Number to roman conversion&quot;" time="0.036" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
-  <testcase name="NumberToRomanComponent should be return &quot;Value must be greater then 0&quot; when given a negative integer value like -1234" time="0.033" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
-  <testcase name="NumberToRomanComponent should be always return uppercase Roman numerals" time="0.034" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
-  <testcase name="NumberToRomanComponent should create NumberToRomanComponent" time="0.036" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
-  <testcase name="NumberToRomanComponent should be return &quot;Value must be integer&quot; when given a non-integer value like test2345" time="0.03" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
-  <testcase name="NumberToRomanComponent should be return the Roman numeral representation for all integers 1 to 10000" time="0.032" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
-  <testcase name="NumberToRomanComponent should be return &quot;Value must be less then 10000&quot; when given an integer outside the range 1 to 10000" time="0.033" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="AppComponent should create the app" time="0.172" classname="Chrome_77_0_3865_(Windows_10_0_0).AppComponent"/>
+  <testcase name="NumberToRomanComponent should be return &quot;Value must be less then 10000&quot; when given an integer outside the range 1 to 10000" time="0.052" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="NumberToRomanComponent should be return &quot;Value must be integer&quot; when given a non-integer value like test2345" time="0.043" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="NumberToRomanComponent should create NumberToRomanComponent" time="0.045" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="NumberToRomanComponent should be return &quot;Value must be greater then 0&quot; when given a negative integer value like -1234" time="0.055" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="NumberToRomanComponent should be always return uppercase Roman numerals" time="0.039" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="NumberToRomanComponent should render title in a h3 tag &quot;Number to roman conversion&quot;" time="0.028" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="NumberToRomanComponent should be return the Roman numeral representation for all integers 1 to 10000" time="0.048" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
+  <testcase name="NumberToRomanComponent should be return &quot;Value field cannot be empty&quot; when input field is empty" time="0.089" classname="Chrome_77_0_3865_(Windows_10_0_0).NumberToRomanComponent"/>
   <system-out>
-    <![CDATA[Chrome 77.0.3865 (Windows 10.0.0) ERROR
-  DisconnectedClient disconnected from CONNECTED state (ping timeout)
-
+    <![CDATA[
 ]]>
   </system-out>
   <system-err/>
