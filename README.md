@@ -15,11 +15,9 @@ Run `ng build --prod` to build the project.
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Junit test results path :--- 
 
-`/test-results/unit-test-results.xml`
 
-## Cobertura coverage report path :---
+## code coverage report path :---
 
 `/coverage/cobertura-coverage.xml`
 
